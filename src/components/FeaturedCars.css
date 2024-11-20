@@ -1,0 +1,86 @@
+.featured-cars-section {
+    text-align: center; 
+    position: relative;
+    width: 70%;
+    margin-left: 200px;
+    margin-top: 50px;
+  }
+  
+  .tabs-section {
+    width: 80%; 
+    margin: 10px auto;
+    display: flex;
+    padding-top: 5px;
+   
+  }
+  
+  .tab-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  
+  .tab-button.active {
+    background-color: #fcd116; 
+    color: white;
+   
+  }
+
+  .featured-car-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .featured-car-list {
+
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-top: 0;
+  }
+  
+  .car-card {
+    min-width: 250px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .car-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .car-name, .car-price {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .car-details {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  
+  .featured-cars-section h2 {
+    display: inline-block;
+    position: relative;
+    padding: 0 20px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  
+  
