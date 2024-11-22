@@ -1,0 +1,52 @@
+.our-goals-section {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .goals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .goal-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .goal-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .goal-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .goal-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .goal-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .goal-description {
+    font-size: 1rem;
+    color: #666;
+  }
+  
