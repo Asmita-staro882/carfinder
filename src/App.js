@@ -13,6 +13,7 @@ import FAQ from "./components/Faq";
 import BlogCarousel from "./components/Blog";
 import Founder from "./components/Founder";
 import ProfilePage from "./components/ProfilePage/ProfilePage";
+import BrowseCar from "./components/BrowseCars/BrowseCar";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Footer /> */}
         <Routes>
           <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/used-car" element={<BrowseCar />} />
         </Routes>
       </div>
     </Router>

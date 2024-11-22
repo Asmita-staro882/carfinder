@@ -1,0 +1,13 @@
+.browse-car-container {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .car-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 16px;
+    flex: 1;
+  }
+  
