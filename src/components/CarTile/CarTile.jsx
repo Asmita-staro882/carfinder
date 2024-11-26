@@ -11,6 +11,7 @@ const CarTile = ({ car }) => {
         <h3 className="car-name">{car.name}</h3>
         <p className="car-details-text">{car.details}</p>
         <span className="car-price">${car.price}</span>
+        <button className="view-details-button">View Details</button>
       </div>
     </div>
   );

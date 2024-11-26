@@ -1,74 +1,65 @@
 import React from "react";
+import FilterOption from "../FilterOption/FilterOption";
 import "./Filters.css";
 
 const Filters = () => {
   return (
     <div className="filters">
       <h2>Filters</h2>
+
       <div className="filter-group">
-        <label>Price Range</label>
-        <select>
-          <option value="">Select Price Range</option>
-          <option value="0-10000">0-10,000</option>
-          <option value="10001-20000">10,001-20,000</option>
-          <option value="20001-30000">20,001-30,000</option>
-        </select>
+        <h3>Price Range</h3>
+        <FilterOption id="under5lac" name="price" label="Under 5 Lac" />
+        <FilterOption id="5to10lac" name="price" label="5-10 Lac" />
+        <FilterOption id="10to20lac" name="price" label="10-20 Lac" />
+        <FilterOption id="20to30lac" name="price" label="20-30 Lac" />
+        <FilterOption id="30lac+" name="price" label="30 Lac+" />
       </div>
+
       <div className="filter-group">
-        <label>Brands</label>
-        <select>
-          <option value="">Select Brand</option>
-          <option value="brand1">Brand 1</option>
-          <option value="brand2">Brand 2</option>
-        </select>
+        <h3>Brands</h3>
+        <FilterOption id="brand1" name="brand" label="Brand 1" />
+        <FilterOption id="brand2" name="brand" label="Brand 2" />
       </div>
+
       <div className="filter-group">
-        <label>Model</label>
-        <select>
-          <option value="">Select Model</option>
-          <option value="model1">Model 1</option>
-          <option value="model2">Model 2</option>
-        </select>
+        <h3>Model</h3>
+        <FilterOption id="model1" name="model" label="Model 1" />
+        <FilterOption id="model2" name="model" label="Model 2" />
       </div>
+
       <div className="filter-group">
-        <label>Year</label>
-        <select>
-          <option value="">Select Year</option>
-          <option value="2023">2023</option>
-          <option value="2022">2022</option>
-        </select>
+        <h3>Year</h3>
+        <FilterOption id="2023" name="year" label="2023" />
+        <FilterOption id="2022" name="year" label="2022" />
       </div>
+
       <div className="filter-group">
-        <label>Owner</label>
-        <select>
-          <option value="">Select Owner</option>
-          <option value="1">1 Owner</option>
-          <option value="2">2 Owners</option>
-        </select>
+        <h3>Owner</h3>
+        <FilterOption id="1owner" name="owner" label="1st Owner" />
+        <FilterOption id="2owners" name="owner" label="2nd Owner" />
+        <FilterOption id="2owners" name="owner" label="3rd Owner" />
       </div>
+
       <div className="filter-group">
-        <label>Km Driven</label>
-        <select>
-          <option value="">Select Km Driven</option>
-          <option value="0-5000">0-5,000</option>
-          <option value="5001-10000">5,001-10,000</option>
-        </select>
+        <h3>Km Driven</h3>
+        <FilterOption id="0to50000" name="kmDriven" label="0-50000" />
+        <FilterOption id="50001to70000" name="kmDriven" label="50000-70000" />
+        <FilterOption id="70000to100000" name="kmDriven" label="70000-100000" />
       </div>
+
       <div className="filter-group">
-        <label>Fuel</label>
-        <select>
-          <option value="">Select Fuel Type</option>
-          <option value="petrol">Petrol</option>
-          <option value="diesel">Diesel</option>
-        </select>
+        <h3>Fuel</h3>
+        <FilterOption id="petrol" name="fuel" label="Petrol" />
+        <FilterOption id="diesel" name="fuel" label="Diesel" />
+        <FilterOption id="hybrid" name="fuel" label="Hybird" />
+        <FilterOption id="electric" name="fuel" label="Electric" />
       </div>
+
       <div className="filter-group">
-        <label>Transmission</label>
-        <select>
-          <option value="">Select Transmission</option>
-          <option value="manual">Manual</option>
-          <option value="automatic">Automatic</option>
-        </select>
+        <h3>Transmission</h3>
+        <FilterOption id="manual" name="transmission" label="Manual" />
+        <FilterOption id="automatic" name="transmission" label="Automatic" />
       </div>
     </div>
   );

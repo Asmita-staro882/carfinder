@@ -36,6 +36,30 @@ const cars = [
     price: "79999",
     imageUrl: car1, // Use the image path as a string
   },
+  {
+    name: "Tesla Model SS",
+    details: "Electric sedan with autopilot features.",
+    price: "79999",
+    imageUrl: car1, // Use the image path as a string
+  },
+  {
+    name: "Tesla Model SS",
+    details: "Electric sedan with autopilot features.",
+    price: "79999",
+    imageUrl: car1, // Use the image path as a string
+  },
+  {
+    name: "Tesla Model SS",
+    details: "Electric sedan with autopilot features.",
+    price: "79999",
+    imageUrl: car1, // Use the image path as a string
+  },
+  {
+    name: "Tesla Model SS",
+    details: "Electric sedan with autopilot features.",
+    price: "79999",
+    imageUrl: car1, // Use the image path as a string
+  },
 ];
 
 const BrowseCar = () => {
