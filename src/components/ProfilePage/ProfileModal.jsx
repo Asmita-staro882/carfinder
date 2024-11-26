@@ -3,54 +3,41 @@ import { useNavigate } from "react-router-dom";
 import "./ProfileModal.css";
 
 const ProfileModal = ({ option, onClose }) => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [userType, setUserType] = useState("Buyer"); // Default to Buyer
   const [otp, setOtp] = useState("");
   const [otpSent, setOtpSent] = useState(false);
   const navigate = useNavigate();
 
   const sendOtp = () => {
-    if (name && email && phone) {
+    if (phone) {
       setOtpSent(true);
-      alert("OTP sent: 1234"); // Simulated OTP
+      alert("OTP sent!"); // Simulated OTP
     } else {
-      alert("Please fill all the fields.");
+      alert("Please enter your mobile number.");
     }
   };
 
   const verifyOtp = async () => {
-    if (otp === "1234") {
-      try {
-        const response = await fetch(
-          "http://localhost:5000/api/v1/auth/signup",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ name, email, phone, userType, otp }),
-          }
-        );
+    try {
+      const response = await fetch("http://localhost:5000/api/v1/auth/signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ phone, otp }),
+      });
 
-        const data = await response.json();
-
-        if (response.ok) {
-          alert(`${option} successful`);
-          navigate(userType === "Dealer" ? "/dealer" : "/user");
-          onClose();
-        } else {
-          alert(data.message);
-        }
-      } catch (error) {
-        console.error("Error during signup:", error);
+      const data = await response.json();
+      console.log("API Response:", data); // Add this for debugging
+      if (response.ok) {
+        alert("OTP verified successfully!");
+        navigate("/used-car");
+        onClose();
+      } else {
+        alert(data.message);
       }
-    } else {
-      alert("Invalid OTP");
+    } catch (error) {
+      console.error("Error during OTP verification:", error);
     }
   };
-
   return (
     <div className="modal-overlay">
       <div className="modal">
@@ -62,29 +49,10 @@ const ProfileModal = ({ option, onClose }) => {
             <h3>{option}</h3>
             <input
               type="text"
-              placeholder="Enter name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-            <input
-              type="email"
-              placeholder="Enter email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <input
-              type="text"
               placeholder="Enter mobile number"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
             />
-            <select
-              value={userType}
-              onChange={(e) => setUserType(e.target.value)}
-            >
-              <option value="Buyer">Buyer</option>
-              <option value="Dealer">Dealer</option>
-            </select>
             <button onClick={sendOtp}>Get OTP</button>
           </>
         ) : (

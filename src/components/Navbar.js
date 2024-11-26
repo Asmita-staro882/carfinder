@@ -50,9 +50,6 @@ const Navbar = () => {
           </div>
           {dropdownVisible && (
             <div className="dropdown-menu">
-              <button onClick={() => openModal("Dealer Login")}>
-                Dealer Login
-              </button>
               <button onClick={() => openModal("Login/Signup")}>
                 Login/Signup
               </button>

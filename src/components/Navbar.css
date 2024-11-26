@@ -124,3 +124,6 @@
 .profile-icon:hover{
 cursor: pointer;
 }
+.dropdown-menu button{
+  margin-top: 0;
+}
