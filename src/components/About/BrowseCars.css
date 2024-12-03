@@ -1,58 +1,108 @@
 .browse-cars-section {
-    padding: 50px;
-    background-color: #f8f8f8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  padding: 50px 20px; 
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.browse-cars-content {
+  display: flex;
+  flex-wrap: wrap; 
+  max-width: 1200px;
+  gap: 30px;
+  align-items: center;
+}
+
+.browse-cars-left {
+  flex: 1;
+  min-width: 300px; 
+}
+
+.browse-cars-image {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.browse-cars-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 300px; 
+}
+
+.browse-cars-right h2 {
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: bold;
+  margin: 0;
+}
+
+.browse-cars-right p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.browse-cars-button {
+  padding: 15px 25px;
+  background-color: #ffd600;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  align-self: start;
+}
+
+.browse-cars-button:hover {
+  background-color: #e6b800;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@media (max-width: 768px) {
   .browse-cars-content {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    gap: 20px;
+    flex-direction: column; 
+    text-align: center; 
   }
-  
-  .browse-cars-left,
-  .browse-cars-right {
-    flex: 1;
-    min-width: 300px;
-  }
-  
-  .browse-cars-image {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .browse-cars-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-  }
-  
+
   .browse-cars-right h2 {
-    font-size: 2rem;
-    color: #333;
+    font-size: 2rem; 
   }
-  
+
   .browse-cars-right p {
-    font-size: 1.1rem;
-    color: #666;
+    font-size: 1rem; 
   }
-  
+
   .browse-cars-button {
-    padding: 15px 25px;
-    background-color: #ff4b4b;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    align-self: center; 
   }
-  
-  .browse-cars-button:hover {
-    background-color: #e03d3d;
+}
+
+
+@media (max-width: 480px) {
+  .browse-cars-section {
+    padding: 30px 15px; 
   }
-  
+
+  .browse-cars-right h2 {
+    font-size: 1.8rem;
+  }
+
+  .browse-cars-right p {
+    font-size: 0.9rem;
+  }
+
+  .browse-cars-button {
+    font-size: 0.8rem; 
+    padding: 8px 15px;
+  }
+}

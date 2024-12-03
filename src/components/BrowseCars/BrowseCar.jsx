@@ -10,55 +10,55 @@ const cars = [
     name: "Tesla Model S",
     details: "Electric sedan with autopilot features.",
     price: "79999",
-    imageUrl: car1, // Use the image path as a string
+    imageUrl: car1, 
   },
   {
     name: "Tesla Model X",
     details: "Electric sedan with autopilot features.",
     price: "79999",
-    imageUrl: car1, // Use the image path as a string
+    imageUrl: car1, 
   },
   {
     name: "Tesla Model Y",
     details: "Electric sedan with autopilot features.",
     price: "79999",
-    imageUrl: car1, // Use the image path as a string
+    imageUrl: car1, 
   },
   {
     name: "Tesla Model Z",
     details: "Electric sedan with autopilot features.",
     price: "79999",
-    imageUrl: car1, // Use the image path as a string
+    imageUrl: car1, 
   },
   {
     name: "Tesla Model SS",
     details: "Electric sedan with autopilot features.",
     price: "79999",
-    imageUrl: car1, // Use the image path as a string
+    imageUrl: car1, 
   },
   {
     name: "Tesla Model SS",
     details: "Electric sedan with autopilot features.",
     price: "79999",
-    imageUrl: car1, // Use the image path as a string
+    imageUrl: car1, 
   },
   {
     name: "Tesla Model SS",
     details: "Electric sedan with autopilot features.",
     price: "79999",
-    imageUrl: car1, // Use the image path as a string
+    imageUrl: car1, 
   },
   {
     name: "Tesla Model SS",
     details: "Electric sedan with autopilot features.",
     price: "79999",
-    imageUrl: car1, // Use the image path as a string
+    imageUrl: car1, 
   },
   {
     name: "Tesla Model SS",
     details: "Electric sedan with autopilot features.",
     price: "79999",
-    imageUrl: car1, // Use the image path as a string
+    imageUrl: car1, 
   },
 ];
 

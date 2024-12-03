@@ -53,6 +53,7 @@
   align-items: center;
   gap: 2rem;
   padding-left: 3px;
+  font-size: 16px;
 }
 
 .navbar-center a {
@@ -126,4 +127,57 @@ cursor: pointer;
 }
 .dropdown-menu button{
   margin-top: 0;
+}
+
+.wishlist-icon{
+  text-decoration: none;
+}
+
+.hamburger-menu {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-links.open {
+  display: block;
+}
+
+/* Media Query for Mobile Screens */
+@media screen and (max-width: 768px) {
+  .hamburger-menu {
+    display: block; /* Show hamburger menu on mobile */
+  }
+
+  .navbar-links {
+    display: none; 
+    flex-direction: column; 
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    z-index: 1000;
+    padding: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-links.open {
+    display: flex; 
+  }
+
+  .navbar-center,
+  .navbar-right {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .whatsapp-button {
+    width: 100%;
+  }
 }

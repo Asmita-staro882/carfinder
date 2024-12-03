@@ -28,41 +28,34 @@ const testimonials = [
     image: customer3,
   },
   {
-    name: "Vikram Shah",
-    location: "Mumbai",
+    name: "Ravi Kumar",
+    location: "Pune",
     testimonial:
-      "Partnering with Vahan Shree was a great decision for our dealership. We sold a pre-owned MG Hector quickly at a competitive price.",
+      "The platform's professionalism impressed me. I found my ideal pre-owned vehicle without a hitch!",
     image: customer4,
-  },
-  {
-    name: "Vikram Shah",
-    location: "Mumbai",
-    testimonial:
-      "Partnering with Vahan Shree was a great decision for our dealership. We sold a pre-owned MG Hector quickly at a competitive price.",
-    image: customer2,
   },
 ];
 
 const HappyCustomer = () => {
   return (
-    <div className="happy-customer-section">
+    <div className="customer-section">
       <h2 className="section-title">Our Happy Customers</h2>
-      <div className="testimonial-cards">
-        {testimonials.map((testimonial, index) => (
-          <div className="testimonial-card" key={index}>
-            <img
-              src={testimonial.image}
-              alt={`${testimonial.name}`}
-              className="testimonial-img"
-            />
-            <div className="testimonial-content">
-              <p className="testimonial-text">"{testimonial.testimonial}"</p>
-              <p className="testimonial-name">
-                - {testimonial.name}, {testimonial.location}
-              </p>
+      <div className="customer-wrapper">
+        <div className="customer-list">
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="customer-card">
+              <img
+                src={testimonial.image}
+                alt={testimonial.name}
+                className="customer-image"
+              />
+              <h3 className="customer-name">
+                {testimonial.name}, {testimonial.location}
+              </h3>
+              <p className="customer-description">"{testimonial.testimonial}"</p>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

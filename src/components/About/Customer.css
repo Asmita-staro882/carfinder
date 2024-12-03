@@ -1,53 +1,106 @@
-.happy-customer-section {
-    padding: 40px;
-    background-color: #f9f9f9;
+.customer-section {
+  text-align: center;
+  width: 70%;
+  margin: 50px auto;
+}
+
+.customer-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.customer-list {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-top: 0;
+}
+
+.customer-card {
+  min-width: 250px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.customer-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.customer-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.customer-description {
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .customer-section {
+    width: 90%;
   }
-  
-  .section-title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 40px;
-    color: #333;
+
+  .customer-wrapper {
+    flex-direction: column; 
+    align-items: center; 
   }
-  
-  .testimonial-cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+
+  .customer-list {
+    flex-direction: column; 
+    gap: 15px; 
   }
-  
-  .testimonial-card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 30%;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
+
+  .customer-card {
+    min-width: 80%;
   }
-  
-  .testimonial-card:hover {
-    transform: scale(1.05);
+
+  .customer-name {
+    font-size: 14px; 
   }
-  
-  .testimonial-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
+
+  .customer-description {
+    font-size: 12px; 
   }
-  
-  .testimonial-text {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 15px;
+}
+
+/* For small screens (phones) */
+@media (max-width: 480px) {
+  .customer-section {
+    width: 100%; 
+    margin: 20px auto;
   }
-  
-  .testimonial-name {
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: #333;
+
+  .customer-wrapper {
+    padding: 10px; 
   }
-  
+
+  .customer-list {
+    flex-direction: column; 
+    gap: 10px;
+  }
+
+  .customer-card {
+    min-width: 100%; 
+    padding: 10px; 
+  }
+
+  .customer-name {
+    font-size: 14px;
+  }
+
+  .customer-description {
+    font-size: 12px; 
+  }
+}

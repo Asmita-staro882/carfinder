@@ -1,106 +1,190 @@
-
 .blog-section-container {
-   position: relative;
-   width: 70%;
-   margin-left: 200px;
-   margin-top: 50px;
- 
-  }
-  
-  .section-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-  } 
-  
-  
-  .tabs-section {
-    width: 80%; 
-    margin: 10px auto;
-    display: flex;
-    padding-top: 5px;
-  }
-  
-  .tab-button {
-    border: none;
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .tab-button.active-tab {
-    background-color: #ffd600;
-    font-weight: bold;
-  }
-  
-  .tab-button:hover {
-    background-color: #f1f1f1;
-  }
-  
-  
-  .blog-list-wrapper {
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .blog-list {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    padding-top: 0;
-  }
-  
-  .blog-card {
-    min-width: 250px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #fff;
-    text-align: center;
-   
-  }
-  
-  
-  
-  .blog-image {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-  
-  .blog-title {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 10px 0;
-    color: #333;
-  }
-  
-  .blog-description {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 10px;
-  }
-  
-  .blog-date {
-    font-size: 12px;
-    color: #999;
-  }
-  
+  position: relative;
+  width: 80%;
+  margin: 50px auto;
+}
 
-  @media (max-width: 768px) {
-    .blog-card {
-      min-width: 200px;
-    }
-  
-    .section-title {
-      font-size: 20px;
-    }
-  }
-  
+.section-title {
+   font-size: 24px;
+   font-weight: bold;
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+.tabs-section {
+   width: 80%;
+   margin: 10px auto;
+   display: flex;
+   justify-content: center;
+   padding-top: 5px;
+}
+
+.tab-button {
+   border: none;
+   background-color: white;
+   color: black;
+   padding: 10px 20px;
+   font-size: 14px;
+   cursor: pointer;
+   transition: background-color 0.3s ease-in-out;
+}
+
+.tab-button.active-tab {
+   background-color: #ffd600;
+   font-weight: bold;
+}
+
+.tab-button:hover {
+   background-color: #f1f1f1;
+}
+
+.blog-list-wrapper {
+   position: relative;
+   display: flex;
+   align-items: center;
+   padding: 20px;
+}
+
+.blog-list {
+   display: flex;
+   gap: 20px;
+   overflow-x: auto;
+   scroll-behavior: smooth;
+   padding-top: 0;
+}
+
+.blog-card {
+   min-width: 250px;
+   padding: 15px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   background-color: #fff;
+   text-align: center;
+}
+
+.blog-image {
+   width: 100%;
+   height: auto;
+   border-radius: 5px;
+}
+
+.blog-title {
+   font-size: 16px;
+   font-weight: bold;
+   margin: 10px 0;
+   color: #333;
+}
+
+.blog-description {
+   font-size: 14px;
+   color: #555;
+   margin-bottom: 10px;
+}
+
+.blog-date {
+   font-size: 12px;
+   color: #999;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+   .blog-section-container {
+       width: 90%;
+   }
+
+   .tabs-section {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .tab-button {
+       margin: 5px 0;
+   }
+
+   .blog-list {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .blog-card {
+       min-width: 80%;
+       margin-bottom: 20px;
+   }
+}
+
+@media (max-width: 768px) {
+   .blog-section-container {
+       width: 95%;
+   }
+
+   .section-title {
+       font-size: 20px;
+   }
+
+   .tabs-section {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .tab-button {
+       font-size: 16px;
+       padding: 8px 16px;
+   }
+
+   .blog-list {
+       flex-direction: column;
+       align-items: center;
+       gap: 10px;
+   }
+
+   .blog-card {
+       min-width: 90%;
+       margin-bottom: 15px;
+   }
+
+   .blog-title {
+       font-size: 14px;
+   }
+
+   .blog-description {
+       font-size: 12px;
+   }
+
+   .blog-date {
+       font-size: 10px;
+   }
+}
+
+@media (max-width: 480px) {
+   .section-title {
+       font-size: 18px;
+   }
+
+   .tab-button {
+       font-size: 14px;
+       padding: 6px 12px;
+   }
+
+   .blog-list {
+       flex-direction: column;
+       align-items: center;
+       gap: 10px;
+   }
+
+   .blog-card {
+       min-width: 100%;
+       margin-bottom: 15px;
+   }
+
+   .blog-title {
+       font-size: 12px;
+   }
+
+   .blog-description {
+       font-size: 10px;
+   }
+
+   .blog-date {
+       font-size: 8px;
+   }
+}

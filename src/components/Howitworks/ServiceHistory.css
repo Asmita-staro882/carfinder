@@ -1,56 +1,96 @@
 .service-history-section {
-    position: relative;
-    background-image: url('../../images/service.jpg'); 
-    background-size: cover;
-    background-position: center;
-    padding: 60px 20px;
-  }
-  
+  position: relative;
+  background-image: url('../../images/service.jpg'); 
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  margin: 20px 0 50px;
+}
+
+.service-overlay {
+  background: #fff;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.history-text h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.history-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.phone-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.request-button {
+  background-color: #ff6f00;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.request-button:hover {
+  background-color: #e65c00;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .service-overlay {
-    background: #fff;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    padding: 20px;
   }
-  
+
   .history-text h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
   }
-  
-  .history-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
+
   .phone-input {
-    width: 300px;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
   }
-  
+
   .request-button {
-    background-color: #ff6f00;
-    color: #fff;
-    border: none;
-    padding: 12px 20px;
-    margin-left: 10px;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 15px;
   }
-  
-  .request-button:hover {
-    background-color: #e65c00;
+}
+
+@media (max-width: 480px) {
+  .history-text h2 {
+    font-size: 1.3rem;
   }
-  
-  
+
+  .phone-input {
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  .request-button {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+}

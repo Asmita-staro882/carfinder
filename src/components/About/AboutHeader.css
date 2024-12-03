@@ -1,41 +1,79 @@
 .about-header-section {
-    position: relative;
-    background: url('../../images/whyuse.jpg') center/cover no-repeat;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    margin-top: 150px;
+  position: relative;
+  background: url('../../images/whyuse.jpg') center/cover no-repeat;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-top: 0;
+}
+
+.content {
+  text-align: center;
+  max-width: 600px;
+  padding: 0 20px; 
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.watch-video-button {
+  background-color: #ffc107;
+  border: none;
+  padding: 10px 20px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.watch-video-button:hover {
+  background-color: #e0a800;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .about-header-section {
+    height: 400px; 
   }
-  
-  .content {
-    text-align: center;
-    max-width: 600px;
-  }
-  
+
   .content h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 2rem; 
   }
-  
+
   .content p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    margin-bottom: 1.5rem;
+    font-size: 0.9rem; 
   }
-  
+}
+
+
+@media (max-width: 480px) {
+  .about-header-section {
+    height: 300px; 
+  }
+
+  .content h1 {
+    font-size: 1.8rem; 
+  }
+
+  .content p {
+    font-size: 0.8rem
+  }
+
   .watch-video-button {
-    background-color: #ffc107;
-    border: none;
-    padding: 10px 20px;
-    color: #000;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+    padding: 8px 16px; 
+    font-size: 0.9rem; 
   }
-  
-  .watch-video-button:hover {
-    background-color: #e0a800;
-  }
+}

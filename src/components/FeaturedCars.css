@@ -46,7 +46,7 @@
     padding-top: 0;
   }
   
-  .car-card {
+  .featured-car-card {
     min-width: 250px;
     padding: 15px;
     border: 1px solid #ddd;
@@ -55,19 +55,19 @@
     text-align: center;
   }
   
-  .car-image {
+  .featured-car-image {
     width: 100%;
     height: auto;
     border-radius: 5px;
   }
   
-  .car-name, .car-price {
+  .featured-car-name, .car-price {
     font-size: 16px;
     font-weight: bold;
     margin: 10px 0;
   }
   
-  .car-details {
+  .featured-car-details {
     font-size: 14px;
     color: #555;
   }

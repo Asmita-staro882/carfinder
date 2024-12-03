@@ -51,11 +51,11 @@ const FeaturedCarsSection = () => {
      <div className="featured-car-wrapper">
       <div className="featured-car-list">
         {cars[selectedTab].map((car, index) => (
-          <div key={index} className="car-card">
-            <img src={car.image} alt={car.name} className="car-image" />
-            <h3 className="car-name">{car.name}</h3>
-            <p className="car-details">{car.details}</p>
-            <p className="car-price">{car.price}</p>
+          <div key={index} className="featured-car-card">
+            <img src={car.image} alt={car.name} className="featured-car-image" />
+            <h3 className="featured-car-name">{car.name}</h3>
+            <p className="featured-car-details">{car.details}</p>
+            <p className="featured-car-price">{car.price}</p>
           </div>
         ))}
         </div>
